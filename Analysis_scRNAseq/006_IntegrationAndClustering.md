@@ -112,4 +112,63 @@ pwAll <- pwAll[order(pwAll$comp, pwAll$p_val_adj),]
 sig <- subset(pwAll, (avg_logFC >= 0.25 & p_val_adj <= 0.05) & (pct.1 >= 0.2 | pct.2 >= 0.2))
 write.table(sig, file="ClustersPairwiseDE_LFC25FDR5_CellExpress20%inAtleast1Cluster.txt", sep="\t", quote = FALSE)
 ```
+<<<<<<< HEAD
+=======
+
+R codes to make cluster tree and rotate around some of the nodes/branches (but still maintain the phylogenetic structuring).
+```
+Idents(All.integrated) <- All.integrated$seurat_clusters
+All.integrated <- BuildClusterTree(All.integrated, dims = 1:14, assay = "PCA")
+PlotClusterTree(All.integrated, edge.width = 3)
+data.tree <- Tool(object = pbmc, slot = "BuildClusterTree") # pull the tree
+ape::plot.phylo(x = data.tree, direction = "downwards", edge.width = 1.5)
+
+data.tree <- ape::rotateConstr(data.tree, c('30', '20', '13', '19', '25', '27', '32', '29','33', '18', '14', '28', '2', '8', '11', '7', '23','16',
+          '10', '15', '26', '1', '17', '31', '5','9', '6', '21', '24', '0', '12', '22', '3', '4','34', '35'))
+plot(data.tree, direction = 'downwards', edge.width = 1.5, font = 1)
+
+Idents(All.integrated) <- All.integrated$seurat_clusters
+levels(All.integrated) <- c('30', '20', '13', '19', '25', '27', '32', '29','33', '18', '14', '28', '2', '8', '11', '7', '23','16',
+          '10', '15', '26', '1', '17', '31', '5','9', '6', '21', '24', '0', '12', '22', '3', '4','34', '35')
+All.integrated$phyloorder <- Idents(All.integrated)
+plot(data.tree, direction = 'downwards', edge.width = 3, font = 0)
+```
+
+Sub-clustering
+```
+## CD4T ##
+CD4T <- subset(All.integrated, idents = c('0', '3', '4', '28'))
+CD4T <- DietSeurat(CD4T, counts = TRUE, data = TRUE, scale.data = FALSE, dimreducs = c('pca','tsne','umap'))
+CD4T <- ScaleData(CD4T, assay = "RNA")
+Idents(CD4T) <- CD4T$seurat_clusters
+CD4T <- RunUMAP(CD4T, dims = 1:14, reduction = "pca", assay = "SCT")
+CDU <- DimPlot(object = CD4T, reduction = "umap", label = FALSE, pt.size = 0.2)
+
+## GD ##
+GD <- subset(All.integrated, idents = c('6', '21', '24', '31'))
+GD <- DietSeurat(GD, counts = TRUE, data = TRUE, scale.data = FALSE, dimreducs = c('pca','tsne','umap'))
+GD <- ScaleData(GD, assay = "RNA")
+Idents(GD) <- GD$seurat_clusters
+GD <- RunUMAP(GD, dims = 1:14, reduction = "pca", assay = "SCT")
+GDU <- DimPlot(object = GD, reduction = "umap", label = FALSE, pt.size = 0.2)
+
+## B-plasma ##
+Bplasma <- subset(All.integrated, idents = c('29', '33', '2', '8', '11', '7', '23', '16', '10', '15', '26'))
+Bplasma <- DietSeurat(Bplasma, counts = TRUE, data = TRUE, scale.data = FALSE, dimreducs = c('pca','tsne','umap'))
+Bplasma <- ScaleData(Bplasma, assay = "RNA")
+Idents(Bplasma) <- Bplasma$seurat_clusters
+Bplasma <- RunUMAP(Bplasma, dims = 1:14, reduction = "pca", assay = "SCT")
+BPU <- DimPlot(object = Bplasma, reduction = "umap", label = FALSE, pt.size = 0.2)
+
+plot_grid(CDU, GDU, BPU, nrow = 1)
+```
+![**Figure 4.**](Notebook/ClusterFigs/SubCluster.png)
+
+```
+saveRDS(CD4T, file = "CD4T_SCPBMC7_12132020.rds")
+saveRDS(GD, file = "GD_SCPBMC7_12132020.rds")
+saveRDS(Bplasma, file = "Bplasma_SCPBMC7_12132020.rds")
+```
+
+>>>>>>> cd494cc55c7cdb9772290c707949bccad37a1e07
 ##___END___
