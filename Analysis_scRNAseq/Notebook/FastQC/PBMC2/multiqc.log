@@ -1,0 +1,121 @@
+[2019-09-29 14:39:43,058] multiqc                                            [DEBUG  ]  No MultiQC config found: /software/7/apps/python_2/2.7.13/lib/python2.7/site-packages/multiqc_config.yaml
+[2019-09-29 14:39:43,058] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/sathesh.sivasankaran/.multiqc_config.yaml
+[2019-09-29 14:39:43,058] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2019-09-29 14:39:43,059] multiqc                                            [DEBUG  ]  Command used: /software/7/apps/python_2/2.7.13/bin/multiqc .
+[2019-09-29 14:39:43,932] multiqc                                            [WARNING]  MultiQC Version v1.7 now available!
+[2019-09-29 14:39:43,933] multiqc                                            [INFO   ]  This is MultiQC v1.5
+[2019-09-29 14:39:43,933] multiqc                                            [DEBUG  ]  Command     : /software/7/apps/python_2/2.7.13/bin/multiqc .
+[2019-09-29 14:39:43,933] multiqc                                            [DEBUG  ]  Working dir : /project/fsepru/PIGscRNAseq/Pig-2-PBMC/P2PBMC
+[2019-09-29 14:39:43,933] multiqc                                            [INFO   ]  Template    : default
+[2019-09-29 14:39:43,933] multiqc                                            [INFO   ]  Searching '.'
+[2019-09-29 14:39:43,933] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, conpair, peddy, methylQA, qualimap, preseq, quast, qorts, rna_seqc, rsem, rseqc, busco, goleft_indexcov, disambiguate, supernova, deeptools, sargasso, verifybamid, homer, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, dedup, picard, prokka, samblaster, samtools, bamtools, jellyfish, vcftools, bbmap, bismark, hicexplorer, hicup, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, leehom, adapterRemoval, clipandmerge, cutadapt, flexbar, trimmomatic, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastqc, clusterflow, bcl2fastq, interop
+[2019-09-29 14:39:43,934] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmp8XH0mM
+[2019-09-29 14:39:44,035] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-2_S68_L005_R2_001_fastqc.html
+[2019-09-29 14:39:44,035] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-1_S67_L008_R1_001_fastqc.html
+[2019-09-29 14:39:44,036] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-4_S70_L007_R1_001_fastqc.html
+[2019-09-29 14:39:44,036] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-2_S59_L003_R1_001_fastqc.html
+[2019-09-29 14:39:44,037] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-3_S69_L005_R1_001_fastqc.html
+[2019-09-29 14:39:44,037] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-1_S58_L003_R2_001_fastqc.html
+[2019-09-29 14:39:44,039] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-3_S69_L007_R2_001_fastqc.html
+[2019-09-29 14:39:44,040] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-4_S61_L003_R1_001_fastqc.html
+[2019-09-29 14:39:44,040] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-1_S67_L006_R2_001_fastqc.html
+[2019-09-29 14:39:44,041] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-3_S60_L003_R2_001_fastqc.html
+[2019-09-29 14:39:44,043] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-2_S68_L007_R1_001_fastqc.html
+[2019-09-29 14:39:44,045] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-4_S70_L005_R2_001_fastqc.html
+[2019-09-29 14:39:44,046] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-2_S68_L007_R2_001_fastqc.html
+[2019-09-29 14:39:44,046] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-3_S60_L003_R1_001_fastqc.html
+[2019-09-29 14:39:44,046] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-4_S70_L005_R1_001_fastqc.html
+[2019-09-29 14:39:44,048] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-3_S69_L007_R1_001_fastqc.html
+[2019-09-29 14:39:44,049] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-4_S61_L003_R2_001_fastqc.html
+[2019-09-29 14:39:44,050] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-1_S67_L006_R1_001_fastqc.html
+[2019-09-29 14:39:44,052] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-3_S69_L005_R2_001_fastqc.html
+[2019-09-29 14:39:44,053] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-1_S58_L003_R1_001_fastqc.html
+[2019-09-29 14:39:44,054] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-1_S67_L008_R2_001_fastqc.html
+[2019-09-29 14:39:44,055] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-2_S68_L005_R1_001_fastqc.html
+[2019-09-29 14:39:44,056] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-2_S59_L003_R2_001_fastqc.html
+[2019-09-29 14:39:44,058] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-4_S70_L007_R2_001_fastqc.html
+[2019-09-29 14:39:44,059] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-1_S67_L005_R2_001_fastqc.html
+[2019-09-29 14:39:44,062] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-2_S68_L008_R1_001_fastqc.html
+[2019-09-29 14:39:44,064] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-3_S69_L008_R2_001_fastqc.html
+[2019-09-29 14:39:44,064] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-4_S70_L006_R2_001_fastqc.html
+[2019-09-29 14:39:44,065] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-2_S68_L006_R2_001_fastqc.html
+[2019-09-29 14:39:44,068] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-1_S67_L007_R1_001_fastqc.html
+[2019-09-29 14:39:44,069] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-4_S70_L008_R1_001_fastqc.html
+[2019-09-29 14:39:44,069] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-3_S69_L006_R1_001_fastqc.html
+[2019-09-29 14:39:44,069] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-1_S67_L007_R2_001_fastqc.html
+[2019-09-29 14:39:44,071] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-3_S69_L006_R2_001_fastqc.html
+[2019-09-29 14:39:44,073] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-4_S70_L008_R2_001_fastqc.html
+[2019-09-29 14:39:44,077] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-2_S68_L006_R1_001_fastqc.html
+[2019-09-29 14:39:44,078] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-4_S70_L006_R1_001_fastqc.html
+[2019-09-29 14:39:44,079] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-3_S69_L008_R1_001_fastqc.html
+[2019-09-29 14:39:44,081] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-2_S68_L008_R2_001_fastqc.html
+[2019-09-29 14:39:44,081] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Pig-2-PBMC-1_S67_L005_R1_001_fastqc.html
+[2019-09-29 14:39:44,359] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2019-09-29 14:39:44,365] multiqc                                            [DEBUG  ]  No samples found: conpair
+[2019-09-29 14:39:44,371] multiqc                                            [DEBUG  ]  No samples found: peddy
+[2019-09-29 14:39:44,377] multiqc                                            [DEBUG  ]  No samples found: methylQA
+[2019-09-29 14:39:44,384] multiqc                                            [DEBUG  ]  No samples found: qualimap
+[2019-09-29 14:39:44,390] multiqc                                            [DEBUG  ]  No samples found: preseq
+[2019-09-29 14:39:44,396] multiqc                                            [DEBUG  ]  No samples found: quast
+[2019-09-29 14:39:44,401] multiqc                                            [DEBUG  ]  No samples found: qorts
+[2019-09-29 14:39:44,407] multiqc                                            [DEBUG  ]  No samples found: rna_seqc
+[2019-09-29 14:39:44,413] multiqc                                            [DEBUG  ]  No samples found: rsem
+[2019-09-29 14:39:44,424] multiqc                                            [DEBUG  ]  No samples found: rseqc
+[2019-09-29 14:39:44,430] multiqc                                            [DEBUG  ]  No samples found: busco
+[2019-09-29 14:39:44,436] multiqc                                            [DEBUG  ]  No samples found: goleft_indexcov
+[2019-09-29 14:39:44,441] multiqc                                            [DEBUG  ]  No samples found: disambiguate
+[2019-09-29 14:39:44,447] multiqc                                            [DEBUG  ]  No samples found: supernova
+[2019-09-29 14:39:44,456] multiqc                                            [DEBUG  ]  No samples found: deeptools
+[2019-09-29 14:39:44,462] multiqc                                            [DEBUG  ]  No samples found: sargasso
+[2019-09-29 14:39:44,467] multiqc                                            [DEBUG  ]  No samples found: verifybamid
+[2019-09-29 14:39:44,475] multiqc                                            [DEBUG  ]  No samples found: homer
+[2019-09-29 14:39:44,480] multiqc                                            [DEBUG  ]  No samples found: macs2
+[2019-09-29 14:39:44,486] multiqc                                            [DEBUG  ]  No samples found: theta2
+[2019-09-29 14:39:44,491] multiqc                                            [DEBUG  ]  No samples found: snpeff
+[2019-09-29 14:39:44,500] multiqc                                            [DEBUG  ]  No samples found: gatk
+[2019-09-29 14:39:44,506] multiqc                                            [DEBUG  ]  No samples found: htseq
+[2019-09-29 14:39:44,512] multiqc                                            [DEBUG  ]  No samples found: bcftools
+[2019-09-29 14:39:44,518] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2019-09-29 14:39:44,523] multiqc                                            [DEBUG  ]  No samples found: dedup
+[2019-09-29 14:39:44,536] multiqc                                            [DEBUG  ]  No samples found: picard
+[2019-09-29 14:39:44,541] multiqc                                            [DEBUG  ]  No samples found: prokka
+[2019-09-29 14:39:44,547] multiqc                                            [DEBUG  ]  No samples found: samblaster
+[2019-09-29 14:39:44,555] multiqc                                            [DEBUG  ]  No samples found: samtools
+[2019-09-29 14:39:44,562] multiqc                                            [DEBUG  ]  No samples found: bamtools
+[2019-09-29 14:39:44,567] multiqc                                            [DEBUG  ]  No samples found: jellyfish
+[2019-09-29 14:39:44,575] multiqc                                            [DEBUG  ]  No samples found: vcftools
+[2019-09-29 14:39:44,588] multiqc                                            [DEBUG  ]  No samples found: bbmap
+[2019-09-29 14:39:44,594] multiqc                                            [DEBUG  ]  No samples found: bismark
+[2019-09-29 14:39:44,600] multiqc                                            [DEBUG  ]  No samples found: hicexplorer
+[2019-09-29 14:39:44,605] multiqc                                            [DEBUG  ]  No samples found: hicup
+[2019-09-29 14:39:44,611] multiqc                                            [DEBUG  ]  No samples found: salmon
+[2019-09-29 14:39:44,617] multiqc                                            [DEBUG  ]  No samples found: kallisto
+[2019-09-29 14:39:44,623] multiqc                                            [DEBUG  ]  No samples found: slamdunk
+[2019-09-29 14:39:44,628] multiqc                                            [DEBUG  ]  No samples found: star
+[2019-09-29 14:39:44,634] multiqc                                            [DEBUG  ]  No samples found: hisat2
+[2019-09-29 14:39:44,640] multiqc                                            [DEBUG  ]  No samples found: tophat
+[2019-09-29 14:39:44,645] multiqc                                            [DEBUG  ]  No samples found: bowtie2
+[2019-09-29 14:39:44,651] multiqc                                            [DEBUG  ]  No samples found: bowtie1
+[2019-09-29 14:39:44,657] multiqc                                            [DEBUG  ]  No samples found: leehom
+[2019-09-29 14:39:44,662] multiqc                                            [DEBUG  ]  No samples found: adapterRemoval
+[2019-09-29 14:39:44,668] multiqc                                            [DEBUG  ]  No samples found: clipandmerge
+[2019-09-29 14:39:44,674] multiqc                                            [DEBUG  ]  No samples found: cutadapt
+[2019-09-29 14:39:44,679] multiqc                                            [DEBUG  ]  No samples found: flexbar
+[2019-09-29 14:39:44,685] multiqc                                            [DEBUG  ]  No samples found: trimmomatic
+[2019-09-29 14:39:44,691] multiqc                                            [DEBUG  ]  No samples found: skewer
+[2019-09-29 14:39:44,697] multiqc                                            [DEBUG  ]  No samples found: sortmerna
+[2019-09-29 14:39:44,702] multiqc                                            [DEBUG  ]  No samples found: biobloomtools
+[2019-09-29 14:39:44,708] multiqc                                            [DEBUG  ]  No samples found: fastq_screen
+[2019-09-29 14:39:44,714] multiqc                                            [DEBUG  ]  No samples found: afterqc
+[2019-09-29 14:39:54,524] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 40 reports
+[2019-09-29 14:39:56,218] multiqc                                            [DEBUG  ]  No samples found: clusterflow
+[2019-09-29 14:39:56,224] multiqc                                            [DEBUG  ]  No samples found: bcl2fastq
+[2019-09-29 14:39:56,230] multiqc                                            [DEBUG  ]  No samples found: interop
+[2019-09-29 14:39:56,298] multiqc                                            [INFO   ]  Compressing plot data
+[2019-09-29 14:39:59,066] multiqc                                            [INFO   ]  Report      : multiqc_report.html
+[2019-09-29 14:39:59,066] multiqc                                            [INFO   ]  Data        : multiqc_data
+[2019-09-29 14:39:59,067] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp8XH0mM/multiqc_data/multiqc_fastqc.txt' to '/project/fsepru/PIGscRNAseq/Pig-2-PBMC/P2PBMC/multiqc_data'
+[2019-09-29 14:39:59,071] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp8XH0mM/multiqc_data/multiqc_general_stats.txt' to '/project/fsepru/PIGscRNAseq/Pig-2-PBMC/P2PBMC/multiqc_data'
+[2019-09-29 14:39:59,101] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp8XH0mM/multiqc_data/multiqc_sources.txt' to '/project/fsepru/PIGscRNAseq/Pig-2-PBMC/P2PBMC/multiqc_data'
+[2019-09-29 14:39:59,103] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp8XH0mM/multiqc_data/multiqc_data.json' to '/project/fsepru/PIGscRNAseq/Pig-2-PBMC/P2PBMC/multiqc_data'
+[2019-09-29 14:39:59,304] multiqc                                            [INFO   ]  MultiQC complete
