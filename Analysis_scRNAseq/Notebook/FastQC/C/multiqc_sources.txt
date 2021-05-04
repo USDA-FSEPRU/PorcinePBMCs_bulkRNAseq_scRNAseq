@@ -1,0 +1,9 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	C-2_S18_L002_R2_001	/lustre/project/fsepru/PBMC5/FQC/C/C-2_S18_L002_R2_001_fastqc.zip
+FastQC	all_sections	C-1_S17_L002_R1_001	/lustre/project/fsepru/PBMC5/FQC/C/C-1_S17_L002_R1_001_fastqc.zip
+FastQC	all_sections	C-4_S20_L002_R2_001	/lustre/project/fsepru/PBMC5/FQC/C/C-4_S20_L002_R2_001_fastqc.zip
+FastQC	all_sections	C-1_S17_L002_R2_001	/lustre/project/fsepru/PBMC5/FQC/C/C-1_S17_L002_R2_001_fastqc.zip
+FastQC	all_sections	C-3_S19_L002_R1_001	/lustre/project/fsepru/PBMC5/FQC/C/C-3_S19_L002_R1_001_fastqc.zip
+FastQC	all_sections	C-2_S18_L002_R1_001	/lustre/project/fsepru/PBMC5/FQC/C/C-2_S18_L002_R1_001_fastqc.zip
+FastQC	all_sections	C-4_S20_L002_R1_001	/lustre/project/fsepru/PBMC5/FQC/C/C-4_S20_L002_R1_001_fastqc.zip
+FastQC	all_sections	C-3_S19_L002_R2_001	/lustre/project/fsepru/PBMC5/FQC/C/C-3_S19_L002_R2_001_fastqc.zip
