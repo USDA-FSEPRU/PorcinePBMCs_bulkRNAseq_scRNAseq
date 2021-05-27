@@ -25,6 +25,8 @@ Data quality control was performed using DESeq2 (v1.24.0) (Love et al., 2014) wi
 sh combine.R1.fastq.sh
 sh combine.R2.fastq.sh
 ```
+
+#### combine.R1.fastq.sh
 ``` r
 mkdir -p combined.fastq; cat 28Oct19/LIB105109_S1_L001_R1_001.fastq.gz	29Oct19/LIB105109_S1_L001_R1_001.fastq.gz	28Oct19/LIB105109_S1_L002_R1_001.fastq.gz	29Oct19/LIB105109_S1_L002_R1_001.fastq.gz	28Oct19/LIB105109_S1_L003_R1_001.fastq.gz	29Oct19/LIB105109_S1_L003_R1_001.fastq.gz	28Oct19/LIB105109_S1_L004_R1_001.fastq.gz	29Oct19/LIB105109_S1_L004_R1_001.fastq.gz > combined.fastq/LIB105109_S1_L001_R1_001.fastq.gz
 mkdir -p combined.fastq; cat 28Oct19/LIB105110_S2_L001_R1_001.fastq.gz	29Oct19/LIB105110_S2_L001_R1_001.fastq.gz	28Oct19/LIB105110_S2_L002_R1_001.fastq.gz	29Oct19/LIB105110_S2_L002_R1_001.fastq.gz	28Oct19/LIB105110_S2_L003_R1_001.fastq.gz	29Oct19/LIB105110_S2_L003_R1_001.fastq.gz	28Oct19/LIB105110_S2_L004_R1_001.fastq.gz	29Oct19/LIB105110_S2_L004_R1_001.fastq.gz > combined.fastq/LIB105110_S2_L001_R1_001.fastq.gz
@@ -44,6 +46,7 @@ mkdir -p combined.fastq; cat 28Oct19/LIB105156_S15_L001_R1_001.fastq.gz	29Oct19/
 mkdir -p combined.fastq; cat 28Oct19/LIB105157_S16_L001_R1_001.fastq.gz	29Oct19/LIB105157_S16_L001_R1_001.fastq.gz	28Oct19/LIB105157_S16_L002_R1_001.fastq.gz	29Oct19/LIB105157_S16_L002_R1_001.fastq.gz	28Oct19/LIB105157_S16_L003_R1_001.fastq.gz	29Oct19/LIB105157_S16_L003_R1_001.fastq.gz	28Oct19/LIB105157_S16_L004_R1_001.fastq.gz	29Oct19/LIB105157_S16_L004_R1_001.fastq.gz > combined.fastq/LIB105157_S16_L001_R1_001.fastq.gz
 mkdir -p combined.fastq; cat 28Oct19/LIB105158_S17_L001_R1_001.fastq.gz	29Oct19/LIB105158_S17_L001_R1_001.fastq.gz	28Oct19/LIB105158_S17_L002_R1_001.fastq.gz	29Oct19/LIB105158_S17_L002_R1_001.fastq.gz	28Oct19/LIB105158_S17_L003_R1_001.fastq.gz	29Oct19/LIB105158_S17_L003_R1_001.fastq.gz	28Oct19/LIB105158_S17_L004_R1_001.fastq.gz	29Oct19/LIB105158_S17_L004_R1_001.fastq.gz > combined.fastq/LIB105158_S17_L001_R1_001.fastq.gz
 ```
+#### combine.R2.fastq.sh
 ``` r
 mkdir -p combined.fastq; cat 28Oct19/LIB105109_S1_L001_R2_001.fastq.gz	29Oct19/LIB105109_S1_L001_R2_001.fastq.gz	28Oct19/LIB105109_S1_L002_R2_001.fastq.gz	29Oct19/LIB105109_S1_L002_R2_001.fastq.gz	28Oct19/LIB105109_S1_L003_R2_001.fastq.gz	29Oct19/LIB105109_S1_L003_R2_001.fastq.gz	28Oct19/LIB105109_S1_L004_R2_001.fastq.gz	29Oct19/LIB105109_S1_L004_R2_001.fastq.gz > combined.fastq/LIB105109_S1_L001_R2_001.fastq.gz
 mkdir -p combined.fastq; cat 28Oct19/LIB105110_S2_L001_R2_001.fastq.gz	29Oct19/LIB105110_S2_L001_R2_001.fastq.gz	28Oct19/LIB105110_S2_L002_R2_001.fastq.gz	29Oct19/LIB105110_S2_L002_R2_001.fastq.gz	28Oct19/LIB105110_S2_L003_R2_001.fastq.gz	29Oct19/LIB105110_S2_L003_R2_001.fastq.gz	28Oct19/LIB105110_S2_L004_R2_001.fastq.gz	29Oct19/LIB105110_S2_L004_R2_001.fastq.gz > combined.fastq/LIB105110_S2_L001_R2_001.fastq.gz
