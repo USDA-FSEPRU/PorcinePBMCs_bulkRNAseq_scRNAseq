@@ -2,10 +2,10 @@
 
 This repository contains scripts used to perform data analyses as detailed in the preprint and final publication by Herrera-Uribe & Wiarda et al., as listed below:
 
-#####Preprint:
+##### Preprint:
 Herrera-Uribe J, Wiarda JE, Sivasankaran SK, Daharsh L, Liu H, Byrne KA, Smith TPL, Lunney JK, Loving CL, Tuggle CK. "Reference transcriptomes of porcine peripheral immune cells created through bulk and single-cell RNA sequencing". (2021) *bioRxiv* 2021.04.02.438107. Available at: https://doi.org/10.1101/2021.04.02.438107.
 
-#####Final publication:
+##### Final publication:
 Herrera-Uribe J, Wiarda JE, Sivasankaran SK, Daharsh L, Liu H, Byrne KA, Smith TPL, Lunney JK, Loving CL, Tuggle CK. "Reference transcriptomes of porcine peripheral immune cells created through bulk and single-cell RNA sequencing". (2021) *Frontiers in Genetics*. Available at: doi.org/10.3389/fgene.2021.689406.
 
 More detailed information of materials can be found under a heading for each respective directory.
