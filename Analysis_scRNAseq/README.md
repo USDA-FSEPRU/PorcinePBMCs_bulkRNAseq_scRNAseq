@@ -1,6 +1,6 @@
-# scRNAseq_PBMCs
+# Analysis_scRNAseq
 
-This repository contains scripts used to perform scRNA-seq analysis from seven porcine PBMC samples, detailed in the manuscript "Reference transcriptomes of porcine peripheral immune cells created through bulk and single-cell RNA sequencing" by Herrera-Uribe & Wiarda et al., 2021 (Preprint), available at https://doi.org/10.1101/2021.04.02.438107. Final publication in _Frontiers in Genetics_ (doi: 10.3389/fgene.2021.689406).
+This directory contains scripts used to perform scRNA-seq analysis from seven porcine PBMC samples, detailed in the manuscript "Reference transcriptomes of porcine peripheral immune cells created through bulk and single-cell RNA sequencing" by Herrera-Uribe & Wiarda et al., 2021 (Preprint), available at https://doi.org/10.1101/2021.04.02.438107. Final publication in _Frontiers in Genetics_ (doi: 10.3389/fgene.2021.689406).
 
 Selected processed output files/data from analyses described in our scripts can be found in the Ag Data Commons at https://data.nal.usda.gov/dataset/data-reference-transcriptomics-porcine-peripheral-immune-cells-created-through-bulk-and-single-cell-rna-sequencing.
 
