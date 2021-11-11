@@ -36,24 +36,24 @@ Reads 2 (R2) were corrected for errors using Rcorrector (https://github.com/mour
 module load java/1.8.0_121
 module load zlib/1.2.7
 libs = CT2-1NOV
-R2=(`ls  -1 fastq/${libs[$i]}*_R2_001.fastq.gz |perl -p -e 's/\n/,/' |perl -p -e  's/,$//'` )
+R2=(`ls  -1 fastq/${libs[$i]}*_R2.fastq.gz |perl -p -e 's/\n/,/' |perl -p -e  's/,$//'` )
 perl ~/tools/rcorrector/run_rcorrector.pl -s  ${R2[0]}  -k 25  -od ./fastq/Rcorrected  -t 72
 ```
 
 ### 3' AT trimming
 3’ polyA tails longer than 10 bases were trimmed using custom Perl scripts. Perl script is located in Notebook/Scripts//
 ```
-gzip -d CT2-1NOV-1_S5_L001_R2_001.cor.fq.gz
-perl -p  -i -e  's/([^ ]+s+[^ ]+).+/$1/ if ($. % 4 == 1)' CT2-1NOV-1_S5_L001_R2_001.cor.fq
-gzip CT2-1NOV-1_S5_L001_R2_001.cor.fq
-zcat CT2-1NOV-1_S5_L001_R2_001.cor.fq.gz | perl trimming.AT.pl RNA-seq | gzip > CT2-1NOV-1_S5_L001_R2_001.fastq.gz
+gzip -d CT2-1NOV_R2.cor.fq.gz
+perl -p  -i -e  's/([^ ]+s+[^ ]+).+/$1/ if ($. % 4 == 1)' CT2-1NOV_R2.cor.fq
+gzip CT2-1NOV_R2.cor.fq
+zcat CT2-1NOV_R2.cor.fq.gz | perl trimming.AT.pl RNA-seq | gzip > CT2-1NOV_R2.fastq.gz
 ```
 
 ### Read correction
 R-correction and AT trimming can drop some R2 reads due to its poor quality. To match R1 and R2 reads, R2 longer than 25 bases were re-paired and matched with R1 using BBMap (https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmap-guide/).
 ```
 module load java/1.8.0_121
-~/tools/bbmap/./repair.sh in1=CT2-1NOV-1_S5_L001_R1_001.fastq.gz in2=CT2-1NOV-1_S5_L001_R2_001.fastq.gz out1=Repaired/CT2-1NOV-1_S5_L001_R1_001.fastq.gz out2=Repaired/CT2-1NOV-1_S5_L001_R2_001.fastq.gz outs=Repaired/CT2-1NOV-1_S5_L001.SE.fastq.gz repair -da ziplevel=2 -Xmx20g
+~/tools/bbmap/./repair.sh in1=CT2-1NOV_R1.fastq.gz in2=CT2-1NOV_R2.fastq.gz out1=Repaired/CT2-1NOV_R1.fastq.gz out2=Repaired/CT2-1NOV_R2.fastq.gz outs=Repaired/CT2-1NOV.SE.fastq.gz repair -da ziplevel=2 -Xmx20g
 ```
 
 ### Genome and annotation
@@ -77,7 +77,7 @@ Reads were mapped to reference genome and read counts were quantified (count mat
 cellranger count --id=CT21NOV \
                    --transcriptome=ssc97 \
                    --fastqs=ForRep/Repaired \
-                   --sample=CT2-1NOV-1,CT2-1NOV-2,CT2-1NOV-3,CT2-1NOV-4 \
+                   --sample=CT2-1NOV \
                    --localcores=38
 ```
 
