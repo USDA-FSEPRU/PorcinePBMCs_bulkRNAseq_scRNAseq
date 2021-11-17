@@ -30,6 +30,20 @@ keep <- rowSums(cDat) > 0
 cDat <- cDat[keep,]
 ```
 
+Extract cell barcode information (pDat) from seurat dataset.
+```
+pDat <-data.frame(barcode = colnames(seurat_object))
+pDat$SampleID <- gsub("([^_]+).+", "\\1", pDat$barcode, perl = TRUE)
+
+pDat$BarBak <- pDat$barcode
+pDat <- pDat %>% separate(BarBak, c("Sam","Loupe"))
+pDat <- pDat[,-3] # remove Sam column
+for (i in seq_along(library_id)){ 
+  pDat$Loupe <- ifelse(pDat$SampleID == library_id[i], paste0(pDat$Loupe, paste0("-",i)), pDat$Loupe)
+}
+rownames(pDat) <- pDat$Loupe # make Loupe barcodes the rownames of pDat
+```
+
 Create a dataframe with gene feature list (fDat).
 ```
 fDat <- data.frame(ID = rownames(cDat)) # create a dataframe of the filtered genes
