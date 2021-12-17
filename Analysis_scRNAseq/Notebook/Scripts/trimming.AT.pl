@@ -4,7 +4,6 @@
 #
 # perl trimming.AT.pl RNA-seq
 #
-# Creator : Haibo Liu, ISU
 ###############################
 use warnings;
 use strict;
