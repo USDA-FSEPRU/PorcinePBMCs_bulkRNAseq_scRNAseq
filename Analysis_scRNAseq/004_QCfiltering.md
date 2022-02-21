@@ -18,6 +18,7 @@ Load data into R.
 ```
 data_dir <- c(A = "SoupX/A", B = "SoupX/B", C = "SoupX/C", CT21NOV = "SoupX/CT21NOV",
 			CT230OCT = "SoupX/CT230OCT", PBMC1 = "SoupX/PBMC1", PBMC2 = "SoupX/PBMC2")
+library_id <- c("A", "B", "C", "CT21NOV", "CT230OCT", "PBMC1", "PBMC2")
 lapply(data_dir, dir)
 scRNA_data <- Read10X(data.dir = data_dir)
 seurat_object = CreateSeuratObject(counts = scRNA_data)
