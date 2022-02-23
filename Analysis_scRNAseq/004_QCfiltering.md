@@ -94,9 +94,6 @@ ggplot(pDat, aes(x=SampleID,y=UmiSums, fill=SampleID)) +
 ```
 theme_set(theme_grey())
 mMito <- cDat[fDat$Mitochondrial,]
-idtop <- fDat[fDat$Name %in% names(freqOfExp)[1:50],"ID"]
-mTop <- cDat[idtop,]!=0
-pDat$prcntTop <- colSums(mTop)/50
 pDat$prcntMito <- colSums(mMito)/colSums(cDat)
 ```
 
